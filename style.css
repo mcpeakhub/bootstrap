@@ -1,0 +1,68 @@
+/* install poppins font */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}
+
+.introduction img {
+  width: 175px;
+  height: 175px;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+.mw-650 {
+  max-width: 40rem;
+}
+
+h2 span {
+  background: linear-gradient(#ffffff 60%, #dddddd 30%);
+}
+
+.hover-message {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden message */
+.hover-message .message {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 125%; /* Position the message above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 8rem;
+}
+
+/* Show the message on hover */
+.hover-message:hover .message {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Optional: Add an arrow below the message */
+.hover-message .message::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Position arrow below the message */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}

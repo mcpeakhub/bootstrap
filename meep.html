@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .hover-message {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Hidden message */
+      .hover-message .message {
+        visibility: hidden;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 10px;
+        position: absolute;
+        bottom: 125%; /* Position the message above the link */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s;
+        width: 8rem;
+      }
+
+      /* Show the message on hover */
+      .hover-message:hover .message {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      /* Optional: Add an arrow below the message */
+      .hover-message .message::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Position arrow below the message */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>gimme some space please</h1>
+    <div class="hover-message">
+      <a href="#">Hover over me</a>
+      <div class="message">Currently not on Twitter</div>
+    </div>
+  </body>
+</html>

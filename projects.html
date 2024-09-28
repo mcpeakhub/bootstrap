@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed McPeak</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script>
+      function gotoMovieDemo() {
+        //window.location.href = "https://";
+        window.open("https://atthemoviesem.netlify.app/", "_blank");
+      }
+
+      function gotoMovieSource() {
+        window.open("https://github.com/mcpeakhub/atthemovies.git", "_blank");
+      }
+
+    </script>
+
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">[ Ed ]</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://photos.app.goo.gl/r3U9VWix63ecpUUE7"
+                  target="_blank"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <p class="fs-1 fw-bold">Projects</p>
+          <p class="mw-650">
+            Below is a cross-section of various full-stack projects I've worked on both professionally and personally.
+          </p>
+          <p>A brief description of the project is given, along with the tech stack used in the project.  Also see the links to the
+            sites and source code.</p>
+        </div>
+      </section>
+
+      <section class="project-1 my-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4 "><span>React, Tailwind and SCSS</span></h2>
+          </div>
+          <div class="col-12">
+            <div class="card mb-3" style="max-width: 100%">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img
+                    src="./media/reacttailwindscss.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">At The Movies</h5>
+                    <p class="card-text">
+                       At the Movies is a website that displays information on the latest popular, top rated and upcoming movies. 
+                       The site allows for toggling between light and dark mode, and it offer search capabilities.
+                      </p>
+                      <p>
+                        At the Movies was written using React and Tailwind CSS.  It uses various React techniques such as UseEffect, 
+                        UseState, importing/exporting classes, and others.  The site also performs a third-party API call to retrieve 
+                        the movie data and posters.</p>
+                    <p class="card-text">
+                      <button type="button" class="btn btn-outline-primary" onclick="gotoMovieDemo()">
+                        Live Demo
+                      </button>
+                      <button type="button" class="btn btn-outline-primary" onClick="gotoMovieSource()">
+                        Source Code
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>      
+
+      <!-- onClick(() => {window.location,href="https://mikimate.netlify.app"}</button>) -->
+
+      <section class="project-2 my-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4 "><span>Bootstrap, HTML5 and CSS3</span></h2>
+          </div>
+          <div class="col-12">
+            <div class="card mb-3" style="max-width: 100%">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img
+                    src="./media/bootstraphtml5css3.png"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">About Me & Projects</h5>
+                    <p class="card-text">
+                       About Me & Projects is the site being displayed.  The site gives a high-level 
+                       introduction about me, and highlights several sites I've built that showcase my skills.
+                      </p>
+                      <p>This site is a straightforward website with html page, a stylesheet, and is written 
+                        employing Bootstrap, HTML 5, and CSS 3.</p>
+                    <p class="card-text">
+                      <button type="button" class="btn btn-outline-primary">
+                        Live Demo
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Source Code
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="project-3 my-3">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4 "><span>.Net, SQL Server, SSIS & SSRS</span></h2>
+          </div>
+          <div class="col-12">
+            <div class="card mb-3" style="max-width: 100%">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img
+                    src="./media/capital.png"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Owners Capital</h5>
+                    <p class="card-text">
+                      Owners Capital is an application that imports loan data from other applications, exports data to the 
+                      enterprise financial application, and it calculates the owners equity in terms of stock and cash.</p>
+                       <p>The application is written in VB.Net for the front-end and middle tier, and SQL Server for the database.
+                        Stored procedures are used for CRUD operations. SSIS is used to import/export data. SSRS is 
+                        used to display various reports for the end-users.
+                       </p>
+                       <P>I support this application at my current company, as such, a demo is not possible, and accesss to the 
+                        code is not possible.
+                       </P>
+                    <p class="card-text">
+                      <!-- <button type="button" class="btn btn-outline-primary">
+                        Live Demo
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Source Code
+                      </button> -->
+                    </p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+    </main>
+
+    <footer class="bg-light pt-4 pb-2">
+      <div class="container d-flex flex-wrap">
+        <p class="fs-4 fw-bold pe-4">Ed McPeak</p>
+        <div
+          class="d-flex flex-grow-1 justify-content-between align-items-center flex-wrap"
+        >
+          <ul class="d-flex list-unstyled">
+            <li class="pe-2"><a href="./index.html">Home</a></li>
+            <li class="px-2"><a href="./projects.html">Projects</a></li>
+            <li class="px-2">
+              <a
+                href="https://photos.app.goo.gl/r3U9VWix63ecpUUE7"
+                target="_blank"
+                >Blogs</a
+              >
+            </li>
+          </ul>
+          <ul class="d-flex flex-row list-unstyled">
+            <li class="px-2">
+              <a
+                href="https://www.linkedin.com/in/ed-mcpeak-76386651/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="px-2">
+              <i class="bi bi-twitter"></i>
+            </li>
+            <li class="px-2">
+              <a href="https://instagram.com/mcpeakinsta" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="px-2">
+              <a href="https://github.com/mcpeakhub" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
